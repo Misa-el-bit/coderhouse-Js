@@ -15,17 +15,19 @@ if(age >= 18){
         let userNumber = parseInt(prompt(`Ingresa tu respuesta, tienes ${counter} oprtunidades`))
         let price = 150
         let taxes = Math.floor(Math.random() * 31)
+        let payTaxes = () => {
+            return Math.floor(price*taxes)/100;
+        }
+        let realPrice = () =>{
+            return price - payTaxes()
+        }
         if(userNumber === hiddenNumber){
             alert(`Felicidades ${name}, has adivinado el número, ganaste 150 dls`)
             alert("Ahora toca pagar impuestos")
-            let payTaxes = () => {
-                return Math.floor(price*taxes)/100;
-            }
-            alert("Tienes que pagar " + payTaxes() + " dls de impuestos")
-            let realPrice = () =>{
-                return price - payTaxes()
-            }
-            alert("Tu premio es " + realPrice() + " dls")
+            
+            alert("Tienes que pagar " + payTaxes(price,taxes) + " dls de impuestos")
+            
+            alert("Tu premio es " + realPrice(price,payTaxes()) + " dls")
             break
         }else if(userNumber === -1){
             alert(name + " Saliste del juego")
@@ -37,8 +39,6 @@ if(age >= 18){
             alert("Te quedaste sin intentos")
         }
     }
-}else if(age = " "){
-        parseInt(prompt(`${name} Ingresa tu edad para entrar!`))
 }else{
     alert(`Lo siento ${name}, no tienes edad para jugar`)
 }
