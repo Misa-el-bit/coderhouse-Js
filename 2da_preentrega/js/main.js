@@ -4,16 +4,18 @@ let numberOfProducts = prompt("Ingrese el numero de productos a guardar")
 const productList = (numberOfProducts) =>{
     let productsArray = []
 
+    class Producto {
+        constructor(nombre, precio){
+            this.nombre = nombre; 
+            this.precio = precio;
+        }     
+    }
+
     for (i=0; i< numberOfProducts; i++){
         let productName = prompt("Ingresa el nombre del producto")
         let productPrice = parseInt(prompt("Ingresa el precio"))
 
-        class Producto {
-            constructor(nombre, precio){
-                this.nombre = nombre; 
-                this.precio = precio;
-            }     
-        }
+        
         const myProduct = new Producto(productName, productPrice)
         console.log(myProduct)
 
