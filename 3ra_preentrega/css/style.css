@@ -1,0 +1,12 @@
+.card {
+  margin-top: 1rem;
+}
+.card:hover {
+  box-shadow: 5px 5px 5px #ddd;
+  cursor: pointer;
+}
+.card .img-car {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */

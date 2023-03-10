@@ -1,0 +1,15 @@
+.rojo {
+    color: red;
+}
+
+.caja {
+   
+    margin: 1rem;
+    padding: 1rem;
+    display: inline-block;
+    
+}
+
+.marolio {
+    width: 100px;
+}

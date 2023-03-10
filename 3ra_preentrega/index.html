@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>3ra preentrega</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <h2 class="text-center ">Ingresa los datos de tu auto</h2>
+                <form id="car-form" class="bg-dark text-white p-3 border rounded shadow"> 
+                    <div class="form-group">
+                      <label for="brand">Marca</label>
+                      <input id="brand" type="text" class="form-control" placeholder="BWM" name="brand" value="">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Modelo</label>
+                      <input id="model" type="text" class="form-control" placeholder="325i" name="model" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Año</label>
+                        <input id="year" type="text" class="form-control" placeholder="1985" name="year" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Imagen</label>
+                        <input id="picture" type="text" class="form-control" placeholder="url" name="img" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Precio</label>
+                        <input id="price" type="text" class="form-control" placeholder="$000,000" name="price" value="">
+                    </div>
+                    <button type="button"  id="create-card"  class="btn btn-primary mt-3">Subir datos</button>
+                  </form>
+            </div>
+            <div id="cardContainer" class="col-12 col-md-4">
+               
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <button id="showSaved" type="button" class="btn btn-dark">Mostrar guardados</button>
+                <button id="emptSaved" type="button" class="btn btn-danger">Borrar</button>
+            </div>
+            <div id="savedContainer" class="col-12 col-md-4">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
