@@ -12,43 +12,43 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-5">
-                <p class="text-center ">Ingresa los datos de tu auto</p>
+                <h2 class="text-center ">Ingresa los datos de tu auto</h2>
                 <form id="car-form" class="bg-dark text-white p-3 border rounded shadow"> 
                     <div class="form-group">
                       <label for="brand">Marca</label>
-                      <input id="marca" type="text" class="form-control" placeholder="BWM" name="brand" value="">
+                      <input id="brand" type="text" class="form-control" placeholder="BWM" name="brand" value="">
                     </div>
                     <div class="form-group">
                       <label for="">Modelo</label>
-                      <input id="modelo" type="text" class="form-control" placeholder="m3" name="model" value="">
+                      <input id="model" type="text" class="form-control" placeholder="325i" name="model" value="">
                     </div>
                     <div class="form-group">
                         <label for="">Año</label>
-                        <input id="año" type="text" class="form-control" placeholder="2000" name="year" value="">
+                        <input id="year" type="text" class="form-control" placeholder="1985" name="year" value="">
                     </div>
                     <div class="form-group">
                         <label for="">Imagen</label>
-                        <input id="imagen" type="text" class="form-control" placeholder="url" name="img" value="">
+                        <input id="picture" type="text" class="form-control" placeholder="url" name="img" value="">
                     </div>
                     <div class="form-group">
                         <label for="">Precio</label>
-                        <input id="precio" type="text" class="form-control" placeholder="$00,000" name="price" value="">
+                        <input id="price" type="text" class="form-control" placeholder="$000,000" name="price" value="">
                     </div>
-                    <button type="button"  id="create-post"  class="btn btn-primary mt-3">Save</button>
+                    <button type="button"  id="create-card"  class="btn btn-primary mt-3">Subir datos</button>
                   </form>
             </div>
-            <div id="card-container" class="col-12 col-md-4 ">
-                <!--<div id="car-card" class="card" >-->
-                    <img id="car-img" src="" class="img-car" alt="">
-                    <!--<div class="card-body">
-                      <h5 id="car-brand" class="card-title"></h5>
-                      <p id="car-model" class="card-text"></p>
-                      <p id="car-model" class="card-text"></p>
-                      <p id="car-year" class="card-text"></p>
-                      <p id="car-price" class="card-text"></p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>-->
+            <div id="cardContainer" class="col-12 col-md-4">
+               
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <button id="showSaved" type="button" class="btn btn-dark">Mostrar guardados</button>
+                <button id="emptSaved" type="button" class="btn btn-danger">Borrar</button>
+            </div>
+            <div id="savedContainer" class="col-12 col-md-4">
+
             </div>
         </div>
     </div>

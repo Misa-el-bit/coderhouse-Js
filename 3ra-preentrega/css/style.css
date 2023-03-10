@@ -6,7 +6,7 @@
   cursor: pointer;
 }
 .card .img-car {
-  height: 15rem;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
