@@ -1,0 +1,103 @@
+//Colors
+$yellow: #e5f876;
+$gray: #333;
+$shadow: #e9fb7e;
+$gradient1: #373737;
+$gradient2: #aeaeae;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, $gradient1, $gradient2);
+}
+
+#title{
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+}
+
+.btn-yellow{
+    color: $gray;
+    background-color: $yellow;
+    &:hover{
+        color: $yellow;
+        border-color: $yellow;
+        background-color: $gray;
+    }
+}
+
+.btn-outline{
+    color: $yellow;
+    border-color: $gradient2;
+    &:hover{
+        border-color: $yellow;
+        color: $yellow;
+    }
+}
+
+form{
+    border: 1px solid $yellow;
+    .my-input{
+        border-color: $gradient2;
+        &::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        &::-webkit-outer-spin-button{
+            -webkit-appearance: none;
+            margin: 0;
+        }   
+        
+    }
+    label{
+        color: white;
+    }
+    select{
+        cursor: pointer;
+    }
+    
+}
+
+.card{
+    border: 1px solid $yellow;
+    background: linear-gradient(to right, $gradient2, $gradient1);
+    color: white;
+    .card-body{
+        justify-content: space-between;
+        align-items: center;
+        .card-title{
+            color: $yellow;
+        }
+    }
+}
+
+hr{
+    color: $shadow;
+}
+
+#convertionCard{
+    justify-content: center;
+    .card{
+        width: 80%;
+        .card-body{
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+#savedCard{
+    .card{
+        &:hover{
+            box-shadow: 5px 5px 5px $shadow;
+            cursor: pointer;
+        }
+    }
+}

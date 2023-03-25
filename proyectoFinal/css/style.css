@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #373737, #aeaeae);
+}
+
+#title {
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+}
+
+.btn-yellow {
+  color: #333;
+  background-color: #E5F876;
+}
+.btn-yellow:hover {
+  color: #E5F876;
+  border-color: #E5F876;
+  background-color: #333;
+}
+
+.btn-outline {
+  color: #E5F876;
+  border-color: #aeaeae;
+}
+.btn-outline:hover {
+  border-color: #E5F876;
+  color: #E5F876;
+}
+
+form {
+  border: 1px solid #E5F876;
+}
+form .my-input {
+  border-color: #aeaeae;
+}
+form .my-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+form .my-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+form label {
+  color: white;
+}
+form select {
+  cursor: pointer;
+}
+
+.card {
+  border: 1px solid #E5F876;
+  background: linear-gradient(to right, #aeaeae, #373737);
+  color: white;
+}
+.card .card-body {
+  justify-content: space-between;
+  align-items: center;
+}
+.card .card-body .card-title {
+  color: #E5F876;
+}
+
+hr {
+  color: #E9FB7E;
+}
+
+#convertionCard {
+  justify-content: center;
+}
+#convertionCard .card {
+  width: 80%;
+}
+#convertionCard .card .card-body {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#savedCard .card:hover {
+  box-shadow: 5px 5px 5px #E9FB7E;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

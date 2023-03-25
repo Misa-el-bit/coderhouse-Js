@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Code-verter de divisas</title>
+</head>
+<body>
+  <header>
+    <h1 id="title" class="text-center mt-4">Currency Code-verter</h1>
+  </header> 
+  <main class="container d-flex align-items-center justify-content-center mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-12">
+            <form id="formConverter" class="row g-4 rounded shadow">    
+                <div class="col-md-4">
+                  <label for="inputQuantity" class="form-label">Cantidad</label>
+                  <input type="number" class="form-control my-input" id="inputQuantity" placeholder="$" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="inputCurrency1" class="form-label">Convertir de:</label>
+                  <select id="inputCurrency1" class="form-select" aria-label="Default select example">
+                    <option value="">Elige una opción</option>
+                    <option value="USD">USD-Dólar Estadounidense</option>
+                    <option value="EUR">EUR-Euro</option>
+                    <option value="GBP">GBP-Libra Esterlina</option>
+                    <option value="MXN">MXN-Peso Mexicano</option>
+                    <option value="CAD">CAD-Dólar Canadiense</option>
+                    <option value="JPY">JPY-Yen Japonés</option>
+                    <option value="CNY">CNY-Yuan Chino</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputCurrency2" class="form-label">A:</label>
+                    <select id="inputCurrency2" class="form-select" aria-label="Default select example">
+                        <option value="">Elige una opción</option>
+                        <option value="EUR">EUR-Euro</option>
+                        <option value="GBP">GBP-Libra Esterlina</option>
+                        <option value="MXN">MXN-Peso Mexicano</option>
+                        <option value="CAD">CAD-Dólar Canadiense</option>
+                        <option value="JPY">JPY-Yen Japonés</option>
+                        <option value="CNY">CNY-Yuan Chino</option>
+                        <option value="USD">USD-Dólar Estadounidense</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-yellow mb-3">Convertir</button>
+                </div>
+            </form>  
+        </div>
+        <div id="convertionCard" class="col-12 d-flex mb-3">
+          
+        </div>
+        <hr class="mt-3">
+        <div class="buttons d-flex justify-content-evenly mt-3">
+          <button id="showSaved" class="btn btn-outline">Mostrar guardados</button>
+          <button id="deleteSaved" class="btn btn-yellow">Borrar todo</button>
+        </div>
+        <div id="savedCardsContainer" class="row row-cols-1 row-cols-md-3 mt-5">
+         
+        </div>
+    </div>
+  </main>
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
+
