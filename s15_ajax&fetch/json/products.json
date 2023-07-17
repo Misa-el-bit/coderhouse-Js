@@ -1,0 +1,22 @@
+[
+    {
+        "nombre": "Fideos",
+        "precio": 100,
+        "id": 1
+    },
+    {
+        "nombre": "Harina",
+        "precio": 200,
+        "id": 2
+    },
+    {
+        "nombre": "Arroz",
+        "precio": 300,
+        "id": 3
+    },
+    {
+        "nombre": "Atún",
+        "precio": 400,
+        "id": 4
+    }
+]
